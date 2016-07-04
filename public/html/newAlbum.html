@@ -1,0 +1,14 @@
+<h1>NEW ALBUM</h1>
+
+<form ng-submit='createAlbum()'>
+  <div class="form-group">
+    <label>Album Name</label>
+    <input type="text"
+           class="form-control"
+           placeholder="My Summer Vacation"
+           ng-model='album.name'
+           required>
+  </div>
+
+  <button type="submit" class="btn btn-success">Create Album</button>
+</form>

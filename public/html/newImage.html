@@ -1,0 +1,14 @@
+<h1>NEW IMAGE</h1>
+
+<form ng-submit='addImage()'>
+  <div class="form-group">
+    <label>Image Url</label>
+    <input type="text"
+           class="form-control"
+           ng-model='image.url'
+           required>
+  </div>
+
+  <button type="button" class="btn btn-danger" ui-sref='album.show'>Cancel</button>
+  <button type="submit" class="btn btn-success">Create Image</button>
+</form>

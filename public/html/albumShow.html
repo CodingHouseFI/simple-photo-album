@@ -1,0 +1,14 @@
+<h1>ALBUM SHOW</h1>
+<h2>{{album.name}}</h2>
+
+<button class="btn btn-default btn-sm" ng-click='renameAlbum()'>Rename Album</button>
+<button class="btn btn-success btn-sm" ui-sref='album.newImage'>Add New Image</button>
+<button class="btn btn-danger btn-sm" ng-click='deleteAlbum()'>Delete Album</button>
+
+<div class="row">
+  <div class="col-xs-6 col-md-3" ng-repeat='image in album.images track by $index' ui-sref='album.image({imageId: image._id})'>
+    <a class='thumbnail'>
+      <img ng-src="{{image.url}}">
+    </a>
+  </div>
+</div>

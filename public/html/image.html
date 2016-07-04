@@ -1,0 +1,10 @@
+<h1>Image added {{image.createdAt | date}}
+  <button class="btn btn-default" ui-sref='album.show'>Back to Album</button>
+  <button class="btn btn-danger" ng-click='removeImage()'>Delete</button>
+</h1>
+
+<div class="row">
+  <div class="col-xs-12">
+    <img ng-src="{{image.url}}" class="img-responsive">
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<h1>ALBUMS</h1>
+<button class="btn btn-success btn-sm" ui-sref='newAlbum'>Add New Album</button>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Created At</th>
+      <th>No. of Images</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='album in albums track by $index' ng-click='goToAlbum(album._id)'>
+      <td>{{album.name}}</td>
+      <td>{{album.createdAt | date}}</td>
+      <td>{{album.images.length}}</td>
+    </tr>
+  </tbody>
+</table>
